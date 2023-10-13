@@ -1,0 +1,74 @@
+﻿<Window x:Class="DataBindingTable.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300"
+    Title="Привязка элементов к БД" 
+    MinHeight="300" 
+    MinWidth="300"
+    WindowStartupLocation="CenterScreen" 
+    Loaded="Window_Loaded"
+    >
+    <Window.Resources>
+        <SolidColorBrush x:Key="ControlColorBrush" 
+            Color="{x:Static SystemColors.ControlColor}" />
+    </Window.Resources>
+    <Window.DataContext>
+        <TabControl/>
+    </Window.DataContext>
+    <Grid Background="{StaticResource ResourceKey=ControlColorBrush}">
+        <TabControl>
+            <!-- Привязка к таблице Employees через объект -->
+            <TabItem Header="Page1">
+                <Grid 
+                    Name="gridEmployees1"
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <ListBox 
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        Margin="0,0,0,3"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        Name="listEmployees1"
+                        SelectionChanged="listEmployeeslab72_SelectionChanged"
+                        />
+
+                    <TextBlock Grid.Row="1" Margin="0,0,5,0">EmployeeID:</TextBlock>
+                    <TextBox Grid.Row="1" Grid.Column="1" 
+                        Text="{Binding Path=EmployeeID, Mode=OneWay}"
+                        />
+
+                    <TextBlock Grid.Row="2">FullName:</TextBlock>
+                    <TextBox Grid.Row="2" Grid.Column="1" 
+                        Text="{Binding Path=FullName, Mode=OneWay}"
+                        />
+
+                    <TextBlock Grid.Row="3"></TextBlock>
+                    <TextBox Grid.Row="3" Grid.Column="1" 
+                        Text="{Binding Path=Address, Mode=OneWay}"
+                        />
+
+                    <TextBlock Grid.Row="4">BirthDate:</TextBlock>
+                    <TextBox Grid.Row="4" Grid.Column="1" 
+                        Text="{Binding Path=BirthDate, Mode=OneWay}"
+                        />
+
+                    <TextBlock Grid.Row="5">Region:</TextBlock>
+                    <TextBox Grid.Row="5" Grid.Column="1" 
+                        Text="{Binding Path=Region, Mode=OneWay}"
+                        />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

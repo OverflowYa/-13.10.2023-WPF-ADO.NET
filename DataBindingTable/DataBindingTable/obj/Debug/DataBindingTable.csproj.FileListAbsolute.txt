@@ -1,0 +1,9 @@
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable.csproj.AssemblyReference.cache
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\MainWindow.baml
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\MainWindow.g.cs
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\App.g.cs
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable_MarkupCompile.cache
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable.g.resources
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable.Properties.Resources.resources
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable.csproj.GenerateResource.cache
+C:\program1\Visual Studia1\cod11\DataBindingTable\DataBindingTable\obj\Debug\DataBindingTable.csproj.CoreCompileInputs.cache
